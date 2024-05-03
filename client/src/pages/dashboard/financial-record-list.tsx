@@ -7,7 +7,7 @@ import { useMemo, useState } from "react";
 
 interface EditableCellProps extends CellProps<FinancialRecord> {
   updateRecord: (rowIndex: number, columnId: string, value: any) => void;
-  exitable: boolean;
+  editable: boolean;
 }
 
 const EditableCell: React.FC<EditableCellProps> = ({
